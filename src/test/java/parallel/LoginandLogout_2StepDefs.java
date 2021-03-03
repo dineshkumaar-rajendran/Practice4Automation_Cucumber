@@ -44,7 +44,7 @@ public class LoginandLogout_2StepDefs {
 
 	@Then("the user validates the Title of the page in")
 	public void the_user_validates_the_title_of_the_page() {
-		String title = "Sign in - Google Accounts";
+		String title = "Sign i0 - Google Accounts";
 		String Etitle = ThreadLocale.getDriver().getTitle();
 		Assert.assertEquals(Etitle, title);
 	}
