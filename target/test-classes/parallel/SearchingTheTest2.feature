@@ -1,4 +1,4 @@
-Feature: Search Feature
+Feature: Search Feature point two
 
   Scenario:Search for the Word
     Given the user is on the yahoo search page

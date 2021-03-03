@@ -1,5 +1,0 @@
-parallel\RunCucumberTest.class
-parallel\FailedRunner.class
-AppHooks\AppHooks.class
-parallel\LoginandLogout_2StepDefs.class
-parallel\LoginandLogout_StepDefs.class
