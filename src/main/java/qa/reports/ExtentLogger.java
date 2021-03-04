@@ -20,6 +20,10 @@ public final class ExtentLogger {
 	public static void pass(String Message) {
 		ExtentManager.getExtentTest().pass(Message);
 	}
+	
+	public static void logInfo(String Message) {
+		ExtentManager.getExtentTest().info(Message);
+	}
 
 	public static void fail(String Message) {
 		ExtentManager.getExtentTest().fail(Message);

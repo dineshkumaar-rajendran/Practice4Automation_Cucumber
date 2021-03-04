@@ -113,7 +113,8 @@
 					<version>2.22.1</version>
 					<configuration>
 						<parallel>methods</parallel>
-						<useUnlimitedThreads>true</useUnlimitedThreads>
+						<useUnlimitedThreads>false</useUnlimitedThreads>
+						<threadCount>1</threadCount>
 					</configuration>
 				</plugin>
 				<plugin>

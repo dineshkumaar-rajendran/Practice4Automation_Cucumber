@@ -10,16 +10,19 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import qa.reports.ExtentLogger;
 
 public class LoginandLogout_StepDefs {
 
 	@Given("the user is on the google search page")
 	public void the_user_is_on_the_google_search_page() {
+		ExtentLogger.logInfo("Lanuncing the browser and navigating the URL");
 		ThreadLocalDriver.getDriver().get("https://google.com");
 	}
 
 	@When("the user Enters the search keyword")
 	public void the_user_enters_the_search_keyword() {
+		ExtentLogger.logInfo(" Entered the search keyword in the search");
 		WebElement TextBox = ThreadLocalDriver.getDriver().findElement(By.name("q"));
 		TextBox.sendKeys("Core Java");
 	}
@@ -30,6 +33,8 @@ public class LoginandLogout_StepDefs {
 		WebElement ele = ThreadLocalDriver.getDriver().findElement(By.xpath("//div[@class='FPdoLc tfB0Bf']/center/input[@name='btnK']"));
 		JavascriptExecutor executor = (JavascriptExecutor)ThreadLocalDriver.getDriver();
 		executor.executeScript("arguments[0].click()",ele);
+		ExtentLogger.logInfo("Clicked on the Searched button");
+		
 	}
 
 	@Then("the user validate the Signing button")
@@ -37,12 +42,14 @@ public class LoginandLogout_StepDefs {
 		Thread.sleep(3000);
 		WebElement Siginbtn = ThreadLocalDriver.getDriver().findElement(By.xpath("//a[text()='Sign in']"));
 		System.out.println(Siginbtn.isDisplayed());
+		ExtentLogger.logInfo("Validated the Signin button");
 	}
 
 	@And("the user clicks on the Signing button")
 	public void the_user_clicks_on_the_signing_button() {
 		WebElement Siginbtn = ThreadLocalDriver.getDriver().findElement(By.xpath("//a[text()='Sign in']"));
 		Siginbtn.click();
+		ExtentLogger.logInfo("Clicked on the Signing button");
 	}
 
 	@Then("the user validates the Title of the page")
@@ -50,6 +57,7 @@ public class LoginandLogout_StepDefs {
 		String title = "Sign in - Google Accounts";
 		String Etitle = ThreadLocalDriver.getDriver().getTitle();
 		Assert.assertEquals(Etitle, title);
+		ExtentLogger.logInfo("Validated the Signin button");
 	}
 
 }

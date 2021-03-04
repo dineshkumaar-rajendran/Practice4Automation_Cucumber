@@ -10,11 +10,13 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import qa.reports.ExtentLogger;
 
 public class LoginandLogout_2StepDefs {
 
 	@Given("the user is on the yahoo search page")
 	public void the_user_is_on_the_google_search_page() {
+		ExtentLogger.logInfo("Lanuncing the browser and navigating the URL");
 		ThreadLocalDriver.getDriver().get("https://google.com");
 	}
 
@@ -22,6 +24,7 @@ public class LoginandLogout_2StepDefs {
 	public void the_user_enters_the_search_keyword() {
 		WebElement TextBox = ThreadLocalDriver.getDriver().findElement(By.name("q"));
 		TextBox.sendKeys("Selenium");
+		ExtentLogger.logInfo(" Entered the search keyword in the search");
 	}
 
 	@And("the user clicks on the Search page in")
@@ -30,6 +33,7 @@ public class LoginandLogout_2StepDefs {
 		WebElement ele = ThreadLocalDriver.getDriver().findElement(By.xpath("//div[@class='FPdoLc tfB0Bf']/center/input[@name='btnK']"));
 		JavascriptExecutor executor = (JavascriptExecutor)ThreadLocalDriver.getDriver();
 		executor.executeScript("arguments[0].click()",ele);
+		ExtentLogger.logInfo("Clicked on the Searched button");
 
 	}
 
@@ -38,6 +42,7 @@ public class LoginandLogout_2StepDefs {
 		Thread.sleep(3000);
 		WebElement Siginbtn = ThreadLocalDriver.getDriver().findElement(By.xpath("//a[text()='Sign in']"));
 		System.out.println(Siginbtn.isDisplayed());
+		ExtentLogger.logInfo("Validated the Signin button");
 	}
 
 	@And("the user clicks on the Signing button in")
@@ -45,6 +50,7 @@ public class LoginandLogout_2StepDefs {
 		WebElement Siginbtn = ThreadLocalDriver.getDriver().findElement(By.xpath("//a[text()='Sign in']"));
 		Thread.sleep(3000);
 		Siginbtn.click();
+		ExtentLogger.logInfo("Clicked on the Signing button");
 	}
 
 	@Then("the user validates the Title of the page in")
@@ -52,6 +58,7 @@ public class LoginandLogout_2StepDefs {
 		String title = "Sign i0 - Google Accounts";
 		String Etitle =ThreadLocalDriver.getDriver().getTitle();
 		Assert.assertEquals(Etitle, title);
+		ExtentLogger.logInfo("Validated the Signin button");
 	}
 
 }
