@@ -2,6 +2,7 @@ package parallel;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 import DriverFactory.ThreadLocalDriver;
@@ -24,9 +25,11 @@ public class LoginandLogout_StepDefs {
 	}
 
 	@And("the user clicks on the Search page")
-	public void the_user_clicks_on_the_search_page() {
-		ThreadLocalDriver.getDriver().findElement(By.xpath("//div[@class='FPdoLc tfB0Bf']/center/input[@name='btnK']"))
-		.click();
+	public void the_user_clicks_on_the_search_page() throws InterruptedException {
+		Thread.sleep(5000);
+		WebElement ele = ThreadLocalDriver.getDriver().findElement(By.xpath("//div[@class='FPdoLc tfB0Bf']/center/input[@name='btnK']"));
+		JavascriptExecutor executor = (JavascriptExecutor)ThreadLocalDriver.getDriver();
+		executor.executeScript("arguments[0].click()",ele);
 	}
 
 	@Then("the user validate the Signing button")
