@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Dinesh Rajendran</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Mar 4, 2021 04:53:45 PM</span></a>
+<a href="#"><span class="badge badge-primary">Mar 5, 2021 11:22:51 am</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Mar 4, 2021 04:53:45 PM</h3>
+<h3>Mar 5, 2021 11:22:51 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Mar 4, 2021 04:56:59 PM</h3>
+<h3>Mar 5, 2021 11:24:46 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -123,9 +123,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div><small data-tooltip='50%'><b>2</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='100%'><b>4</b> scenarios failed,
+<small data-tooltip='50%'><b>2</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -143,9 +143,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='77%'><b>17</b> steps passed</small></div>
+<div><small data-tooltip='88%'><b>16</b> steps passed</small></div>
 <div>
-<small data-tooltip='22%'><b>5</b> steps failed,
+<small data-tooltip='11%'><b>2</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Search Feature point one":81.829,"Search Feature point two":111.019
+"Search Feature point one":56.167,"Search Feature point two":56.025
 };
 </script>
 <div class="row">
@@ -198,14 +198,14 @@ failParent: 2,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 0,
-failChild: 4,
+passChild: 2,
+failChild: 2,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 17,
-failGrandChild: 5,
+passGrandChild: 16,
+failGrandChild: 2,
 warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
@@ -236,7 +236,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Search Feature point one</p>
             <p class="text-sm">
-              <span>16:53:46 PM</span> / <span>00:01:21:829</span>
+              <span>11:22:53 am</span> / <span>00:00:56:167</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -245,9 +245,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Search Feature point one</h5>
-<span class='badge badge-success'>03.04.2021 16:53:46</span>
-<span class='badge badge-danger'>03.04.2021 16:55:08</span>
-<span class='badge badge-default'>00:01:21:829</span>
+<span class='badge badge-success'>03.05.2021 11:22:53</span>
+<span class='badge badge-danger'>03.05.2021 11:23:49</span>
+<span class='badge badge-default'>00:00:56:167</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -257,10 +257,10 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Search for the Word point one</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Search for the Word point one</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="parallel.LoginandLogout_StepDefs.the_user_is_on_the_google_search_page()">
                 <span>Given the user is on the google search page</span>
@@ -282,24 +282,13 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step fail-bg" title="AFTER">
-                <span>AppHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException
-	at qa.reports.ExtentLogger.pass(ExtentLogger.java:21)
-	at qa.reports.ExtentLogger.pass(ExtentLogger.java:41)
-	at AppHooks.AppHooks.tearDown(AppHooks.java:84)
-</textarea>
-      
-      </div>
-              </div>
           </div>
         </div>
   </div>
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="14"><span class="badge log fail-bg mr-2">Fail</span>Get the signin page title point one</div>
+        <div class="node" id="12"><span class="badge log fail-bg mr-2">Fail</span>Get the signin page title point one</div>
       </div>
     </div>
         <div class="">
@@ -324,18 +313,14 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="parallel.LoginandLogout_StepDefs.the_user_validates_the_title_of_the_page()">
+              <div class="step fail-bg" title="parallel.LoginandLogout_StepDefs.the_user_validates_the_title_of_the_page()">
                 <span>Then the user validates the Title of the page</span>
       <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="AFTER">
-                <span>AppHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException
-	at qa.reports.ExtentLogger.pass(ExtentLogger.java:21)
-	at qa.reports.ExtentLogger.pass(ExtentLogger.java:41)
-	at AppHooks.AppHooks.tearDown(AppHooks.java:84)
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[Core Java - Google Search]> but was:<[Sign in - Google Accounts]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at parallel.LoginandLogout_StepDefs.the_user_validates_the_title_of_the_page(LoginandLogout_StepDefs.java:59)
+	at ?.the user validates the Title of the page(file:///C:/Users/Dines/EcliWrkSp/New/Practice4Automation_Cucumber/src/test/resources/parallel/SearchingTheTest.feature:14)
 </textarea>
       
       </div>
@@ -346,14 +331,14 @@ eventsCount: 5,
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="27"
+        <li class="test-item"  status="fail" test-id="23"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Search Feature point two</p>
             <p class="text-sm">
-              <span>16:55:08 PM</span> / <span>00:01:51:019</span>
+              <span>11:23:50 am</span> / <span>00:00:56:025</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -362,10 +347,10 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Search Feature point two</h5>
-<span class='badge badge-success'>03.04.2021 16:55:08</span>
-<span class='badge badge-danger'>03.04.2021 16:56:59</span>
-<span class='badge badge-default'>00:01:51:019</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span class='badge badge-success'>03.05.2021 11:23:50</span>
+<span class='badge badge-danger'>03.05.2021 11:24:46</span>
+<span class='badge badge-default'>00:00:56:025</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
 </div>
@@ -374,10 +359,10 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="28"><span class="badge log fail-bg mr-2">Fail</span>Search for the Word</div>
+        <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>Search for the Word</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="parallel.LoginandLogout_2StepDefs.the_user_is_on_the_google_search_page()">
                 <span>Given the user is on the yahoo search page</span>
@@ -399,24 +384,13 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step fail-bg" title="AFTER">
-                <span>AppHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException
-	at qa.reports.ExtentLogger.pass(ExtentLogger.java:21)
-	at qa.reports.ExtentLogger.pass(ExtentLogger.java:41)
-	at AppHooks.AppHooks.tearDown(AppHooks.java:84)
-</textarea>
-      
-      </div>
-              </div>
           </div>
         </div>
   </div>
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="40"><span class="badge log fail-bg mr-2">Fail</span>Get the signin page title</div>
+        <div class="node" id="34"><span class="badge log fail-bg mr-2">Fail</span>Get the signin page title</div>
       </div>
     </div>
         <div class="">
@@ -444,21 +418,11 @@ eventsCount: 5,
               <div class="step fail-bg" title="parallel.LoginandLogout_2StepDefs.the_user_validates_the_title_of_the_page()">
                 <span>Then the user validates the Title of the page in</span>
       <div>
-        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<S[elenium - Google Search]> but was:<S[ign i0 - Google Accounts]>
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<Sign i[n] - Google Accounts> but was:<Sign i[0] - Google Accounts>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
 	at parallel.LoginandLogout_2StepDefs.the_user_validates_the_title_of_the_page(LoginandLogout_2StepDefs.java:60)
-	at ?.the user validates the Title of the page in(file:///C:/Users/625730/Eclipse/BDD/Practice4Automation_Cucumber/src/test/resources/parallel/SearchingTheTest2.feature:14)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step fail-bg" title="AFTER">
-                <span>AppHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException
-	at qa.reports.ExtentLogger.fail(ExtentLogger.java:47)
-	at AppHooks.AppHooks.tearDown(AppHooks.java:74)
+	at ?.the user validates the Title of the page in(file:///C:/Users/Dines/EcliWrkSp/New/Practice4Automation_Cucumber/src/test/resources/parallel/SearchingTheTest2.feature:14)
 </textarea>
       
       </div>
@@ -482,7 +446,7 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -510,77 +474,21 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>16:56:34 PM</td>
+<td>11:23:48 am</td>
 <td>
-<a href="#" class="linked" test-id='27' id='49'>Then the user validates the Title of the page in</a>
+<a href="#" class="linked" test-id='1' id='20'>Then the user validates the Title of the page</a>
+<div class="">
+<span class="badge badge-default">Search Feature point one.Get the signin page title point one.Then the user validates the Title of the page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:24:44 am</td>
+<td>
+<a href="#" class="linked" test-id='23' id='42'>Then the user validates the Title of the page in</a>
 <div class="">
 <span class="badge badge-default">Search Feature point two.Get the signin page title.Then the user validates the Title of the page in</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">java.lang.NullPointerException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>java.lang.NullPointerException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>16:54:11 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='12'>AppHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</a>
-<div class="">
-<span class="badge badge-default">Search Feature point one.Search for the Word point one.AppHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>16:55:03 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='25'>AppHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</a>
-<div class="">
-<span class="badge badge-default">Search Feature point one.Get the signin page title point one.AppHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>16:55:54 PM</td>
-<td>
-<a href="#" class="linked" test-id='27' id='38'>AppHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</a>
-<div class="">
-<span class="badge badge-default">Search Feature point two.Search for the Word.AppHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>16:56:34 PM</td>
-<td>
-<a href="#" class="linked" test-id='27' id='51'>AppHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</a>
-<div class="">
-<span class="badge badge-default">Search Feature point two.Get the signin page title.AppHooks.AppHooks.tearDown(io.cucumber.java.Scenario)</span>
 </div>
 </td>
 </tr>

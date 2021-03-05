@@ -1,14 +1,16 @@
 package AppHooks;
 
+import java.awt.Desktop;
+import java.io.File;
 import java.io.IOException;
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 
 import com.aventstack.extentreports.Status;
+import com.org.dinesh.constants.FrameworkConstants;
 import com.org.dinesh.utility.configreader;
 
-import DriverFactory.ThreadLocalDriver;
 import DriverFactory.driverFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -17,6 +19,8 @@ import qa.enumer.ConfigProperties;
 import qa.reports.ExtentLogger;
 import qa.reports.ExtentManager;
 import qa.reports.ExtentReports_Test;
+
+
 
 public class AppHooks {
 
@@ -28,7 +32,7 @@ public class AppHooks {
 	 */
 
 	
-	@Before(order = -1)
+	@BeforeSuite
 	public void init_reports(Scenario scenario) throws Exception {
 		ExtentReports_Test.init_reports();
 	}
@@ -71,7 +75,7 @@ public class AppHooks {
 	public void tearDown(Scenario scenario) throws Exception {
 		if (scenario.isFailed()) {
 			
-			ExtentLogger.fail(ScenarioName, true);
+			ExtentLogger.fail(ScenarioName);
 			// take screenshot:
 			/*
 			 * String screenshotName = scenario.getName().replaceAll(" ", "_"); byte[]
@@ -81,14 +85,15 @@ public class AppHooks {
 			 */
 
 		} else {
-			ExtentLogger.pass(ScenarioName, false);
+			ExtentLogger.pass(ScenarioName);
 		}
-
+		
 	}
 	
-	@After(order=2)
+	@AfterSuite
 	public void FlushReports() throws Exception {
 		ExtentReports_Test.Flush_reports();
+		Desktop.getDesktop().browse(new File(FrameworkConstants.getExtentreportpath()).toURI());
 	}
 
 }

@@ -1,2 +1,2 @@
-file:src/test/resources/parallel/SearchingTheTest.feature:3:9
-file:src/test/resources/parallel/SearchingTheTest2.feature:3:9
+file:src/test/resources/parallel/SearchingTheTest.feature:9
+file:src/test/resources/parallel/SearchingTheTest2.feature:9
