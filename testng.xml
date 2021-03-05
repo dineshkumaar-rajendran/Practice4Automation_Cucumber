@@ -2,8 +2,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 <listeners>
-		<listener class-name="com.qa.listeners.ListenersClass" />
-	<!-- 	<listener class-name="com.qa.listeners.AnotationTransformer" /> -->
+	<!-- 	<listener class-name="com.qa.listeners.ListenersClass" /> -->
+		<listener class-name="com.qa.listeners.AnotationTransformer" />
 	</listeners>
 
   <test thread-count="5" name="Test">

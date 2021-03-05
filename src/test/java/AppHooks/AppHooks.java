@@ -32,10 +32,6 @@ public class AppHooks {
 	 */
 
 	
-	@BeforeSuite
-	public void init_reports(Scenario scenario) throws Exception {
-		ExtentReports_Test.init_reports();
-	}
 	
 	
 	@Before(order = 0)
@@ -75,7 +71,7 @@ public class AppHooks {
 	public void tearDown(Scenario scenario) throws Exception {
 		if (scenario.isFailed()) {
 			
-			ExtentLogger.fail(ScenarioName);
+			ExtentLogger.fail(ScenarioName,true);
 			// take screenshot:
 			/*
 			 * String screenshotName = scenario.getName().replaceAll(" ", "_"); byte[]
@@ -85,15 +81,12 @@ public class AppHooks {
 			 */
 
 		} else {
-			ExtentLogger.pass(ScenarioName);
+			ExtentLogger.pass(ScenarioName,true);
 		}
-		
+		ExtentReports_Test.Flush_reports();
+		//Desktop.getDesktop().browse(new File(FrameworkConstants.getExtentreportpath()).toURI());
 	}
 	
-	@AfterSuite
-	public void FlushReports() throws Exception {
-		ExtentReports_Test.Flush_reports();
-		Desktop.getDesktop().browse(new File(FrameworkConstants.getExtentreportpath()).toURI());
-	}
+	
 
 }

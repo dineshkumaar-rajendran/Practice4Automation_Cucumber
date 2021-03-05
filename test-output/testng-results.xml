@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-04T10:07:44 IST" name="Suite" finished-at="2021-03-04T10:08:33 IST" duration-ms="48804">
+  <suite started-at="2021-03-05T20:50:16 IST" name="Suite" finished-at="2021-03-05T20:51:36 IST" duration-ms="79941">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.RunCucumberTest@2b91004a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.RunCucumberTest@69997e9d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-03-04T10:07:44 IST" name="Test" finished-at="2021-03-04T10:08:33 IST" duration-ms="48804">
+    <test started-at="2021-03-05T20:50:16 IST" name="Test" finished-at="2021-03-05T20:51:36 IST" duration-ms="79941">
       <class name="parallel.RunCucumberTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:parallel.RunCucumberTest@2b91004a]" started-at="2021-03-04T10:07:44 IST" name="setUpClass" finished-at="2021-03-04T10:07:45 IST" duration-ms="646" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:parallel.RunCucumberTest@69997e9d]" started-at="2021-03-05T20:50:16 IST" name="setUpClass" finished-at="2021-03-05T20:50:16 IST" duration-ms="477" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.RunCucumberTest@2b91004a]" started-at="2021-03-04T10:07:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-04T10:08:30 IST" duration-ms="44557" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.RunCucumberTest@69997e9d]" started-at="2021-03-05T20:50:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-05T20:51:32 IST" duration-ms="76223" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,23 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.RunCucumberTest@2b91004a]" started-at="2021-03-04T10:07:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-04T10:08:28 IST" duration-ms="42701" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search for the Word point one"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Search Feature point one]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.RunCucumberTest@2b91004a]" started-at="2021-03-04T10:07:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-04T10:08:28 IST" duration-ms="42814" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.RunCucumberTest@69997e9d]" started-at="2021-03-05T20:50:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-05T20:51:34 IST" duration-ms="77744" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -67,15 +51,31 @@
               <![CDATA[org.junit.ComparisonFailure: expected:<Sign i[n] - Google Accounts> but was:<Sign i[0] - Google Accounts>
 at org.junit.Assert.assertEquals(Assert.java:117)
 at org.junit.Assert.assertEquals(Assert.java:146)
-at parallel.LoginandLogout_2StepDefs.the_user_validates_the_title_of_the_page(LoginandLogout_2StepDefs.java:54)
-at ✽.the user validates the Title of the page in(file:///C:/Users/Dines/EcliWrkSp/New/Practice4Automation_Cucumber/src/test/resources/parallel/SearchingTheTest2.feature:14)
+at parallel.LoginandLogout_2StepDefs.the_user_validates_the_title_of_the_page(LoginandLogout_2StepDefs.java:60)
+at ✽.the user validates the Title of the page in(file:///C:/Users/625730/Eclipse/BDD/Practice4Automation_Cucumber/src/test/resources/parallel/SearchingTheTest2.feature:14)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.junit.ComparisonFailure -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.RunCucumberTest@2b91004a]" started-at="2021-03-04T10:07:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-04T10:08:29 IST" duration-ms="43697" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.RunCucumberTest@69997e9d]" started-at="2021-03-05T20:50:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-05T20:51:32 IST" duration-ms="75539" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search for the Word point one"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Search Feature point one]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.RunCucumberTest@69997e9d]" started-at="2021-03-05T20:50:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-05T20:51:32 IST" duration-ms="75620" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -88,10 +88,51 @@ at ✽.the user validates the Title of the page in(file:///C:/Users/Dines/EcliWr
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Sign in']"}
+  (Session info: chrome=89.0.4389.72)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PCIN475022', ip: '192.168.8.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.72, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\625730\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62024}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5b8e2741a9c2af1c641f16eee5a2f765
+*** Element info: {Using=xpath, value=//a[text()='Sign in']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Sign in']"}
+  (Session info: chrome=89.0.4389.72)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PCIN475022', ip: '192.168.8.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.72, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\625730\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62024}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5b8e2741a9c2af1c641f16eee5a2f765
+*** Element info: {Using=xpath, value=//a[text()='Sign in']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at parallel.LoginandLogout_2StepDefs.the_user_validate_the_signing_button(LoginandLogout_2StepDefs.java:43)
+at ✽.the user validate the Signing button in(file:///C:/Users/625730/Eclipse/BDD/Practice4Automation_Cucumber/src/test/resources/parallel/SearchingTheTest2.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:parallel.RunCucumberTest@2b91004a]" started-at="2021-03-04T10:08:30 IST" name="tearDownClass" finished-at="2021-03-04T10:08:33 IST" duration-ms="3534" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:parallel.RunCucumberTest@69997e9d]" started-at="2021-03-05T20:51:34 IST" name="tearDownClass" finished-at="2021-03-05T20:51:36 IST" duration-ms="1688" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
