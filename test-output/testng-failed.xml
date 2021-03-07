@@ -8,7 +8,7 @@
     <classes>
       <class name="parallel.RunCucumberTest">
         <methods>
-          <include name="runScenario" invocation-numbers="2 3"/>
+          <include name="runScenario" invocation-numbers="3"/>
           <include name="tearDownClass"/>
           <include name="setUpClass"/>
         </methods>

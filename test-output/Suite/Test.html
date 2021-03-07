@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 05 20:50:16 IST 2021</td>
+<td>Started on:</td><td>Sun Mar 07 13:36:09 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>79 seconds (79941 ms)</td>
+<tr><td>Total time:</td><td>73 seconds (73668 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,73 +75,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='parallel.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: parallel.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for the Word", "Optional[Search Feature point two]"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Sign in&apos;]&quot;}
-  (Session info: chrome=89.0.4389.72)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PCIN475022&apos;, ip: &apos;192.168.8.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.72, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\625730\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62024}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5b8e2741a9c2af1c641f16eee5a2f765
-*** Element info: {Using=xpath, value=//a[text()=&apos;Sign in&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at parallel.LoginandLogout_2StepDefs.the_user_validate_the_signing_button(LoginandLogout_2StepDefs.java:43)
-	at ?.the user validate the Signing button in(file:///C:/Users/625730/Eclipse/BDD/Practice4Automation_Cucumber/src/test/resources/parallel/SearchingTheTest2.feature:7)
-... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1394251601", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1394251601'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Sign in&apos;]&quot;}
-  (Session info: chrome=89.0.4389.72)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PCIN475022&apos;, ip: &apos;192.168.8.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.72, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\625730\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62024}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5b8e2741a9c2af1c641f16eee5a2f765
-*** Element info: {Using=xpath, value=//a[text()=&apos;Sign in&apos;]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at parallel.LoginandLogout_2StepDefs.the_user_validate_the_signing_button(LoginandLogout_2StepDefs.java:43)
-	at ?.the user validate the Signing button in(file:///C:/Users/625730/Eclipse/BDD/Practice4Automation_Cucumber/src/test/resources/parallel/SearchingTheTest2.feature:7)
-</pre></div></td>
-<td>75</td>
-<td>parallel.RunCucumberTest@69997e9d</td></tr>
-<tr>
-<td title='parallel.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: parallel.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get the signin page title", "Optional[Search Feature point two]"</td>
+<td title='parallel.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: parallel.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Title of the page", "Optional[Search Feature point two]"</td>
 <td><div><pre>org.junit.ComparisonFailure: expected:&lt;Sign i[n] - Google Accounts&gt; but was:&lt;Sign i[0] - Google Accounts&gt;
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
-	at parallel.LoginandLogout_2StepDefs.the_user_validates_the_title_of_the_page(LoginandLogout_2StepDefs.java:60)
-	at ?.the user validates the Title of the page in(file:///C:/Users/625730/Eclipse/BDD/Practice4Automation_Cucumber/src/test/resources/parallel/SearchingTheTest2.feature:14)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1556704892", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1556704892'><pre>org.junit.ComparisonFailure: expected:&lt;Sign i[n] - Google Accounts&gt; but was:&lt;Sign i[0] - Google Accounts&gt;
+	at parallel.LoginandLogout_2StepDefs.the_user_validates_the_title_of_the_page(LoginandLogout_2StepDefs.java:64)
+	at ?.the user validates the Title of the page in(file:///C:/Users/Dines/EcliWrkSp/New/Practice4Automation_Cucumber/src/test/resources/parallel/SearchingTheTest2.feature:14)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1630441785", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1630441785'><pre>org.junit.ComparisonFailure: expected:&lt;Sign i[n] - Google Accounts&gt; but was:&lt;Sign i[0] - Google Accounts&gt;
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
-	at parallel.LoginandLogout_2StepDefs.the_user_validates_the_title_of_the_page(LoginandLogout_2StepDefs.java:60)
-	at ?.the user validates the Title of the page in(file:///C:/Users/625730/Eclipse/BDD/Practice4Automation_Cucumber/src/test/resources/parallel/SearchingTheTest2.feature:14)
+	at parallel.LoginandLogout_2StepDefs.the_user_validates_the_title_of_the_page(LoginandLogout_2StepDefs.java:64)
+	at ?.the user validates the Title of the page in(file:///C:/Users/Dines/EcliWrkSp/New/Practice4Automation_Cucumber/src/test/resources/parallel/SearchingTheTest2.feature:14)
 </pre></div></td>
-<td>77</td>
-<td>parallel.RunCucumberTest@69997e9d</td></tr>
+<td>59</td>
+<td>parallel.RunCucumberTest@7fee8714</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -151,15 +99,20 @@ Session ID: 5b8e2741a9c2af1c641f16eee5a2f765
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='parallel.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: parallel.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for the Word point one", "Optional[Search Feature point one]"</td>
+<td title='parallel.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: parallel.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Title at Google page", "Optional[Search Feature point one]"</td>
 <td></td>
-<td>75</td>
-<td>parallel.RunCucumberTest@69997e9d</td></tr>
+<td>65</td>
+<td>parallel.RunCucumberTest@7fee8714</td></tr>
 <tr>
-<td title='parallel.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: parallel.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get the signin page title point one", "Optional[Search Feature point one]"</td>
+<td title='parallel.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: parallel.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Signing button at Google page", "Optional[Search Feature point one]"</td>
 <td></td>
-<td>76</td>
-<td>parallel.RunCucumberTest@69997e9d</td></tr>
+<td>68</td>
+<td>parallel.RunCucumberTest@7fee8714</td></tr>
+<tr>
+<td title='parallel.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: parallel.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of Signin button", "Optional[Search Feature point two]"</td>
+<td></td>
+<td>68</td>
+<td>parallel.RunCucumberTest@7fee8714</td></tr>
 </table><p>
 </body>
 </html>

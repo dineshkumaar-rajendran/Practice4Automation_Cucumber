@@ -9,7 +9,7 @@ import qa.reports.ExtentLogger;
 
 public class BasePage {
 
-	protected static void click(By by, WaitStrategy waitStrategy, String ElementName) {
+	public static void click(By by, WaitStrategy waitStrategy, String ElementName) {
 
 		WebElement element = WaitFactory.explicitWait(by, waitStrategy);
 		element.click();
@@ -20,7 +20,7 @@ public class BasePage {
 		}
 	}
 
-	protected static void Sendkey(By by, String value, WaitStrategy waitStrategy, String ElementName) {
+	public static void Sendkey(By by, String value, WaitStrategy waitStrategy, String ElementName) {
 
 		WebElement element = WaitFactory.explicitWait(by, waitStrategy);
 		element.sendKeys(value);

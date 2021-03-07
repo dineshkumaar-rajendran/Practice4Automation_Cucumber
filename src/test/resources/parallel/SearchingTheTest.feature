@@ -1,12 +1,12 @@
 Feature: Search Feature point one
-
-  Scenario:Search for the Word point one
+	
+  Scenario: Validate the Signing button at Google page
     Given the user is on the google search page
     When the user Enters the search keyword
     And  the user clicks on the Search page
   	And the user validate the Signing button
   	
- Scenario: Get the signin page title point one
+ Scenario: Validate the Title at Google page
     Given the user is on the google search page
     When the user Enters the search keyword
     And  the user clicks on the Search page

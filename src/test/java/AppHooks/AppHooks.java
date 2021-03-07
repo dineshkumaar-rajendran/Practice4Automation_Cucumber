@@ -40,7 +40,7 @@ public class AppHooks {
 		this.scenario = scenario;
 		ScenarioName = scenario.getName();
 		ExtentReports_Test.createTest(ScenarioName);
-		ExtentManager.getExtentTest().log(Status.INFO,"Scenario started : "+scenario.getName());
+	//	ExtentManager.getExtentTest().pass("Scenario started : "+scenario.getName());
 		/*
 		 * ConfigReader conf = new ConfigReader(); prop = conf.get_prop();
 		 */
@@ -71,7 +71,7 @@ public class AppHooks {
 	public void tearDown(Scenario scenario) throws Exception {
 		if (scenario.isFailed()) {
 			
-			ExtentLogger.fail(ScenarioName,true);
+			ExtentLogger.fail(ScenarioName+" is Failed",true);
 			// take screenshot:
 			/*
 			 * String screenshotName = scenario.getName().replaceAll(" ", "_"); byte[]
@@ -81,12 +81,11 @@ public class AppHooks {
 			 */
 
 		} else {
-			ExtentLogger.pass(ScenarioName,true);
+			ExtentLogger.pass(ScenarioName+" is Passed",true);
 		}
 		ExtentReports_Test.Flush_reports();
-		//Desktop.getDesktop().browse(new File(FrameworkConstants.getExtentreportpath()).toURI());
+		
 	}
 	
 	
-
 }

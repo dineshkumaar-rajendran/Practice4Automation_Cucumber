@@ -1,12 +1,12 @@
 Feature: Search Feature point two
 
-  Scenario:Search for the Word
+ 	 Scenario: Validation of Signin button
     Given the user is on the yahoo search page
     When the user Enters the search keyword in
     And  the user clicks on the Search page in
   	And the user validate the Signing button in
   	
- Scenario: Get the signin page title
+ 	Scenario:  Validation of Title of the page
     Given the user is on the yahoo search page
     When the user Enters the search keyword in
     And  the user clicks on the Search page in
