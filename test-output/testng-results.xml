@@ -2,19 +2,67 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-07T13:36:09 IST" name="Suite" finished-at="2021-03-07T13:37:22 IST" duration-ms="73668">
+  <suite started-at="2021-03-09T09:24:16 IST" name="Suite" finished-at="2021-03-09T09:25:11 IST" duration-ms="55187">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.RunCucumberTest@7fee8714]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-03-07T13:36:09 IST" name="Test" finished-at="2021-03-07T13:37:22 IST" duration-ms="73668">
+    <test started-at="2021-03-09T09:24:16 IST" name="Test" finished-at="2021-03-09T09:25:11 IST" duration-ms="55187">
       <class name="parallel.RunCucumberTest">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:parallel.RunCucumberTest@7fee8714]" started-at="2021-03-07T13:36:09 IST" name="setUpClass" finished-at="2021-03-07T13:36:10 IST" duration-ms="1346" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:parallel.RunCucumberTest@7fee8714]" started-at="2021-03-09T09:24:16 IST" name="setUpClass" finished-at="2021-03-09T09:24:17 IST" duration-ms="971" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.RunCucumberTest@7fee8714]" started-at="2021-03-07T13:36:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-07T13:37:09 IST" duration-ms="59416" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.RunCucumberTest@7fee8714]" started-at="2021-03-09T09:24:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-09T09:25:08 IST" duration-ms="50932" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the Title at Google page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Search Feature point one]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.RunCucumberTest@7fee8714]" started-at="2021-03-09T09:24:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-09T09:24:56 IST" duration-ms="39301" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validation of Signin button"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Search Feature point two]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.RunCucumberTest@7fee8714]" started-at="2021-03-09T09:24:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-09T09:24:55 IST" duration-ms="37754" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the Signing button at Google page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Search Feature point one]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.RunCucumberTest@7fee8714]" started-at="2021-03-09T09:24:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-09T09:25:06 IST" duration-ms="49323" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -43,55 +91,7 @@ at ✽.the user validates the Title of the page in(file:///C:/Users/Dines/EcliWr
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.RunCucumberTest@7fee8714]" started-at="2021-03-07T13:36:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-07T13:37:15 IST" duration-ms="65348" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate the Title at Google page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Search Feature point one]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.RunCucumberTest@7fee8714]" started-at="2021-03-07T13:36:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-07T13:37:18 IST" duration-ms="68330" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validation of Signin button"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Search Feature point two]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:parallel.RunCucumberTest@7fee8714]" started-at="2021-03-07T13:36:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-07T13:37:18 IST" duration-ms="68299" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Validate the Signing button at Google page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Search Feature point one]"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:parallel.RunCucumberTest@7fee8714]" started-at="2021-03-07T13:37:18 IST" name="tearDownClass" finished-at="2021-03-07T13:37:22 IST" duration-ms="3878" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:parallel.RunCucumberTest@7fee8714]" started-at="2021-03-09T09:25:08 IST" name="tearDownClass" finished-at="2021-03-09T09:25:11 IST" duration-ms="3222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
